@@ -1,0 +1,29 @@
+# Environment variables (contains real secrets)
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Runtime temp storage (uploaded PDFs / generated DOCX files)
+src/temp/*
+!src/temp/.gitkeep
+
+# Job store data file
+src/data/
+*.jobstore.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
