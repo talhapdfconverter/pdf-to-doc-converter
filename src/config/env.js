@@ -64,7 +64,7 @@ const config = {
   ocrEnabled: requireEnv('OCR_ENABLED', 'true') === 'true',
   ocrLocale: requireEnv('OCR_LOCALE', 'EN_US'),
   fileExpiryMinutes: parseInt(requireEnv('FILE_EXPIRY_MINUTES', '30'), 10),
-  port: parseInt(requireEnv('PORT', '3000'), 10),
+  port: parseInt(requireEnv('PORT', '8080'), 10),
   nodeEnv: requireEnv('NODE_ENV', 'development'),
   tempDir: require('path').join(__dirname, '..', 'temp')
 };
